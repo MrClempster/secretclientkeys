@@ -451,17 +451,17 @@ end
 
 -- Tab 4 setup
 tab4 = page.addTab()
-tab4.Caption = "Quest Options"
+tab4.Caption = "UI Options"
 tab4.Font.Name = "Comic Sans MS"
 
 -- Tab 5 setup
 tab5 = page.addTab()
-tab5.Caption = "Outfit Options"
+tab5.Caption = "Quest Options"
 tab5.Font.Name = "Comic Sans MS"
 
 -- Tab 6 setup
 tab6 = page.addTab()
-tab6.Caption = "Credits"
+tab6.Caption = "Prefab Options"
 tab6.Font.Name = "Comic Sans MS"
 
 -- Functions
@@ -632,16 +632,29 @@ searchB = '80 EB C2 47 7C 00 00 00 E4 01 00 00 F0 FC 6A 1A'
 replaceB = '00 00 A0 40 00 00 00 00 00 00 00 00 00 00 80 3F 00 00 00 00 00 00 80 3F 00 00 00 00'
 AOBRep(searchB, replaceB)
 end
+
 function paintrifleon()
-searchA = '00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00 00 00 80 3F'
+searchA = '00 00 34 42 00 00 90 40 00 00 90 40 00 00 A0 40 00 00 40 41'
 replaceA = '80 4F C3 47 94 3D C8 01 30 14'
 AOBRep(searchA, replaceA)
+searchB = '00 00 A0 40 00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00'
+replaceB = '00 04 A6 47 4E AA 17 D7 CC 49'
+AOBRep(searchB, replaceB)
+searchC = '00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00 00 00 80 3F'
+replaceC = '00 C7 AF 47 00 00 00 00 2C EE'
+AOBRep(searchC, replaceC)
 end
 
 function paintrifleoff()
 searchA = '80 4F C3 47 94 3D C8 01 30 14'
-replaceA = '00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00 00 00 80 3F'
+replaceA = '00 00 34 42 00 00 90 40 00 00 90 40 00 00 A0 40 00 00 40 41'
 AOBRep(searchA, replaceA)
+searchB = '00 04 A6 47 4E AA 17 D7 CC 49'
+replaceB = '00 00 A0 40 00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00'
+AOBRep(searchB, replaceB)
+searchC = '00 C7 AF 47 00 00 00 00 2C EE'
+replaceC = '00 00 40 41 00 00 00 00 00 00 80 3F 00 00 00 00 00 00 80 3F'
+AOBRep(searchC, replaceC)
 end
 
 function paintshotgunon()
@@ -669,14 +682,14 @@ AOBRep(searchA, replaceA)
 end
 
 function paintsniperon()
-searchA = '00 00 40 3F 00 00 00 00 00 00 00 00 00 '
+searchA = '00 00 40 3F 00 00 00 00 00 00'
 replaceA = '80 4F C3 47 00 00 00 00 00 00'
 AOBRep(searchA, replaceA)
 end
 
 function paintsniperoff()
 searchA = '80 4F C3 47 00 00 00 00 00 00'
-replaceA = '00 00 40 3F 00 00 00 00 00 00 00 00 00 '
+replaceA = '00 00 40 3F 00 00 00 00 00 00'
 AOBRep(searchA, replaceA)
 end
 
