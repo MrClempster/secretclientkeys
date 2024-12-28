@@ -1,7 +1,7 @@
 -- Define static keys and associated PC names
 local keys = {
     ["key1"] = "Desktop-H2RBU",
-    ["key2"] = "Desktop-8P665",
+    ["key2"] = "Desktop-SQV59",
     ["key3"] = "DESKTOP-KFFDNQN"
 }
 
