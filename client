@@ -669,7 +669,7 @@ AOBRep(searchA, replaceA)
 end
 
 function paintsniperon()
-searchA = 00 00 40 3F 00 00 00 00 00 00 00 00 00 '
+searchA = '00 00 40 3F 00 00 00 00 00 00 00 00 00 '
 replaceA = '80 4F C3 47 00 00 00 00 00 00'
 AOBRep(searchA, replaceA)
 end
