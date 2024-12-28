@@ -58,7 +58,7 @@ button.Top = 185
 button.OnClick = function()
 local enteredKey = textBox.Text
 local isKeyValid = false
-local currentPCName = os.getenv("COMPUTERNAME") or "Unknown"
+local currentPCName = os.getenv("USERNAME") or "Unknown"
 
 -- Validate the entered key and check PC name association
 for key, pcName in pairs(keys) do
