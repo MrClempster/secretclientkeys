@@ -1,8 +1,8 @@
 -- Define static keys and associated PC names
 local keys = {
-    ["key1"] = "Desktop-H2RBU",
-    ["key2"] = "Desktop-SQV59",
-    ["key3"] = "DESKTOP-KFFDNQN"
+    ["key1"] = "manoh",
+    ["key2"] = "turtlez",
+    ["key3"] = "jeff"
 }
 
 -- Primary script setup
